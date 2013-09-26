@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+#admin_notice_table{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:560px;
+	padding-left:5px;
+	margin-top:5px;
+	overflow:hidden;
+}
+#notice_table_title{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+}
+#detail_hide{
+	width:340px;
+	height:25px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#33F;
+	text-decoration:none;
+	cursor:pointer;
+}
+#detail_hide:hover{
+	color:#909;
+	text-decoration:underline;
+}
+#notice_page{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666;
+	position:absolute;
+	left:585px;
+	top:735px;
+}
+#notice_page span{
+	text_align:center;
+}
+#noticeIndexImg{
+	margin-top:5px;
+	margin-left:5px;
+	border-bottom:1px solid #000;
+}
+#return{
+	padding-left:20px;
+	cursor:pointer;
+	color:#33F;
+}
+#return:hover{
+	color:#909;
+	text-decoration:underline;
+}

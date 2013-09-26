@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+#main{
+	margin:0 auto;
+	background-color:#FFF;
+	width:820px;
+	height:785px;
+	border:1px solid #000;
+	border-radius:10px;
+	}
+.left_navigator{
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	width:220px;
+	height:535px;
+	border-right:1px solid;
+	border-right-color:#606;
+	background-image:url(../images/left_back.jpg)}
+	}
+ul{
+	padding:5px;
+	margin:0px 0px 0px 0px;
+	margin-bottom:80px;
+	}
+li{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	width:190px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	background-image:url(../images/left_navigatorIndex.jpg);
+	border: 2px solid #fff;
+	float:left;
+	list-style: none;}
+li a{
+	color:#FFF;
+	text-decoration:none;
+	}
+li a:hover{
+	color:#30F;}
+.left{
+	background-image:url(../images/form.jpg);
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	width:200px;
+	height:220px;
+	line-height:40px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;}
+.middle{
+	float:left;
+	width:370px;
+	height:220px;
+	margin-left:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:25px;
+	margin-top:5px;}
+.details_container{
+	float:left;
+	width:540px;
+	margin-left:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:30px;}
+#labInfoIndexImg{
+	margin-left:5px;
+	margin-top:5px;
+	border-bottom:1px solid #000;
+}
+#labInfoIndexReseachArea{
+	position:absolute;
+	left:580px;
+	top:375px;
+	width:487px;
+	overflow:auto;
+}
+#labInfoIndexDetailPosition{
+	position:absolute;
+	left:505px;
+	top:455px;
+}
+#labInfoIndexDetail{
+	width:560px;
+	height:300px;
+	overflow:auto;
+}

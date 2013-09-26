@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--解决乱码    -->
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <!-- 指定允许上传的文件最大字节数。默认值是2097152(2M) -->
+    <constant name="struts.multipart.maxSize" value="52428800"/>
+    
+	<package name="test"  extends="struts-default">
+		<action name="test" class="cn.edu.hunnu.lab.action.TestAction">
+			<result name="success" type="dispatcher">/aa.jsp</result>
+		</action>
+		
+		<action name="login" class="cn.edu.hunnu.lab.action.LoginAction">
+			<result name="success">/index.jsp</result>
+			<result name="用户名不存在，请重新登录！">/index.jsp</result>
+			<result name="用户名与密码不匹配，请重新登录！">/index.jsp</result>
+		</action>
+		<action name="check" class="cn.edu.hunnu.lab.action.CheckAction">
+			<result name="admin">/update_user.jsp</result>
+			<result name="user">/update_user.jsp</result>
+		</action>
+		
+		<action name="read_index_info" class="cn.edu.hunnu.lab.action.read.IndexLabInfoReadAction">
+			<result name="success">/index.jsp</result>
+		</action>
+				
+		<action name="read_login_index_info" class="cn.edu.hunnu.lab.action.read.IndexLabInfoReadAction">
+			<result name="success">/login_index.jsp</result>
+		</action>
+		
+		<action name="read_notice" class="cn.edu.hunnu.lab.action.read.ReadNoticeAction">
+			<result name="success" type="chain">read_achievement_type_notice</result>
+		</action>
+		<action name="read_noticeIndex" class="cn.edu.hunnu.lab.action.read.ReadNoticeAction">
+			<result name="success" type="chain">read_labinfo_noticeIndex</result>
+		</action>
+		
+		<action name="read_notice_page" class="cn.edu.hunnu.lab.action.read.ReadNoticePageAction">
+			<result name="success" type="chain">read_achievement_type_notice</result>
+		</action>
+		<action name="read_noticeIndex_page" class="cn.edu.hunnu.lab.action.read.ReadNoticePageAction">
+			<result name="success" type="chain">read_labinfo_noticeIndex</result>
+		</action>
+		<action name="read_noticeDetail" class="cn.edu.hunnu.lab.action.read.ReadNoticeDetailAction">
+			<result name="success" type="chain">read_labinfo_noticeDetail</result>
+		</action>
+		
+		<action name="edit_notice" class="cn.edu.hunnu.lab.action.edit.EditNoticeAction">
+			<result name="success" type="chain">read_notice</result>
+		</action>
+		
+		<action name="add_notice" class="cn.edu.hunnu.lab.action.add.AddNoticeAction">
+			<result name="success">/notice.jsp</result>
+		</action>
+			
+		<action name="delete_notice" class="cn.edu.hunnu.lab.action.delete.DeleteNoticeAction">
+			<result name="success" type="chain">read_notice</result>
+		</action>
+		
+		<action name="read_news" class="cn.edu.hunnu.lab.action.read.ReadNewsAction">
+			<result name="success" type="chain">read_achievement_type_news</result>
+		</action>
+		<action name="read_newsIndex" class="cn.edu.hunnu.lab.action.read.ReadNewsAction">
+			<result name="success" type="chain">read_labinfo_newsIndex</result>
+		</action>
+		
+		<action name="read_news_page" class="cn.edu.hunnu.lab.action.read.ReadNewsPageAction">
+			<result name="success" type="chain">read_achievement_type_news</result>
+		</action>
+		<action name="read_newsIndex_page" class="cn.edu.hunnu.lab.action.read.ReadNewsPageAction">
+			<result name="success" type="chain">read_labinfo_newsIndex</result>
+		</action>
+		<action name="read_newsDetail" class="cn.edu.hunnu.lab.action.read.ReadNewsDetailAction">
+			<result name="success" type="chain">read_labinfo_newsDetail</result>
+		</action>
+				
+		<action name="add_news" class="cn.edu.hunnu.lab.action.add.AddNewsAction">
+			<result name="success">/news.jsp</result>
+		</action>		
+					
+		<action name="delete_news" class="cn.edu.hunnu.lab.action.delete.DeleteNewsAction">
+			<result name="success" type="chain">read_news</result>
+		</action>
+				
+		<action name="edit_news" class="cn.edu.hunnu.lab.action.edit.EditNewsAction">
+			<result name="success" type="chain">read_news</result>
+		</action>
+				
+		<action name="read_labinfo" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_achievement_type_libinfo</result>
+		</action>
+		<action name="read_labinfo_labInfoIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/labInfoIndex.jsp</result>		
+		</action>
+		<action name="read_labinfo_noticeIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/noticeIndex.jsp</result>		
+		</action>
+		<action name="read_labinfo_newsIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/newsIndex.jsp</result>		
+		</action>
+		<action name="read_labinfo_researchIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_achievement_type_researchIndex</result>		
+		</action>
+		<action name="read_labinfo_teamIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_membertype_teamIndex</result>		
+		</action>
+		<action name="read_labinfo_memberDetail" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_membertype_memberDetail</result>		
+		</action>
+		<action name="read_labinfo_newsDetail" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/newsDetail.jsp</result>		
+		</action>
+		<action name="read_labinfo_noticeDetail" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/noticeDetail.jsp</result>		
+		</action>
+		<action name="read_labinfo_achieveDetail" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/achieveDetail.jsp</result>		
+		</action>
+		<action name="read_labinfo_ruleIndex" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success">/ruleIndex.jsp</result>		
+		</action>
+		
+		<action name="edit_labinfo" class="cn.edu.hunnu.lab.action.edit.EditLabInfoAction">
+			<result name="success">/libinfo.jsp</result>
+		</action>
+					
+		<action name="read_labrule" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_achievement_type_labRule</result>
+		</action>
+									
+		<action name="read_labResearchArea" class="cn.edu.hunnu.lab.action.read.ReadLabInfoAction">
+			<result name="success" type="chain">read_achievement_type_labResearchArea</result>
+		</action>
+											
+		<action name="edit_labResearchArea" class="cn.edu.hunnu.lab.action.edit.EditLabResearchAreaAction">
+			<result name="success">/labResearchArea.jsp</result>
+		</action>
+				
+		<action name="edit_labrule" class="cn.edu.hunnu.lab.action.edit.EditLabRuleAction">
+			<result name="success">/labRule.jsp</result>
+		</action>
+		
+		<action name="read_achievementDetail" class="cn.edu.hunnu.lab.action.read.ReadAchievementDetailAction">
+			<result name="success" type="chain">read_labinfo_achieveDetail</result>
+		</action>
+		
+		<action name="read_research" class="cn.edu.hunnu.lab.action.read.ReadResearchAction">
+			<result name="success" type="chain">read_achievement_type_achieve</result>
+		</action>
+		<action name="read_researchIndex" class="cn.edu.hunnu.lab.action.read.ReadResearchAction">
+			<result name="success" type="chain">read_labinfo_researchIndex</result>
+		</action>
+	
+		<action name="read_research_page" class="cn.edu.hunnu.lab.action.read.ReadResearchPageAction">
+			<result name="success" type="chain">read_achievement_type_achieve</result>
+		</action>
+		<action name="read_researchIndex_page" class="cn.edu.hunnu.lab.action.read.ReadResearchPageAction">
+			<result name="success" type="chain">read_labinfo_researchIndex</result>
+		</action>
+		
+		<action name="edit_research" class="cn.edu.hunnu.lab.action.edit.EditResearchAction">
+			<result name="success">/achievements.jsp</result>
+		</action>
+					
+		<action name="add_research" class="cn.edu.hunnu.lab.action.add.AddResearchAction">
+			<result name="success">/achievements.jsp</result>
+		</action>
+				
+		<action name="read_proj_achievement" class="cn.edu.hunnu.lab.action.read.ReadProjAchieveAction">
+			<result name="success" type="chain">read_achievement_type_achieve</result>
+		</action>
+		<action name="read_proj_achievementIndex" class="cn.edu.hunnu.lab.action.read.ReadProjAchieveAction">
+			<result name="success" type="chain">read_labinfo_researchIndex</result>
+		</action>
+		
+		<action name="read_proj_achievement_page" class="cn.edu.hunnu.lab.action.read.ReadProjAchievePageAction">
+			<result name="success" type="chain">read_achievement_type_achieve</result>
+		</action>
+		<action name="read_proj_achievementIndex_page" class="cn.edu.hunnu.lab.action.read.ReadProjAchievePageAction">
+			<result name="success" type="chain">read_labinfo_researchIndex</result>
+		</action>
+		
+		<action name="read_user_detail_teamIndex" class="cn.edu.hunnu.lab.action.read.ReadUserDetailTeamIndexAction">
+			<result name="success" type="chain">read_labinfo_teamIndex</result>
+		</action>
+		<action name="read_user_detail_type_teamIndex" class="cn.edu.hunnu.lab.action.read.ReadUserDetailByTypeAction">
+			<result name="success" type="chain">read_labinfo_teamIndex</result>
+		</action>
+		<action name="read_user_detail_type_page_teamIndex" class="cn.edu.hunnu.lab.action.read.ReadUserDetailByTypePageAction">
+			<result name="success" type="chain">read_labinfo_teamIndex</result>
+		</action>
+		<action name="read_user_detail_type_memberDetail" class="cn.edu.hunnu.lab.action.read.ReadMemberDetailAction">
+			<result name="success" type="chain">read_labinfo_memberDetail</result>
+		</action>
+		
+		<action name="user_info" class="cn.edu.hunnu.lab.action.read.ReadInfoAction">
+			<result name="success" type="chain">read_achievement_type_userinfo</result>
+		</action>
+		<action name="user_info_page" class="cn.edu.hunnu.lab.action.read.ReadUserInfoPageAction">
+			<result name="success" type="chain">read_achievement_type_userinfo</result>
+		</action>
+		<action name="update_user_detail" class="cn.edu.hunnu.lab.action.edit.UserDetailEditAction">
+			<result name="success">/user_detail.jsp</result>
+		</action>
+		<action name="read_user_detail" class="cn.edu.hunnu.lab.action.read.ReadUserDetailAction">
+			<result name="success" type="chain">read_membertype_userDetail</result>
+		</action>
+		<action name="change_user_password" class="cn.edu.hunnu.lab.action.update.PasswordUpdateAction">
+			<result name="success">/update_password.jsp</result>
+		</action>
+		<action name="change_usertype" class="cn.edu.hunnu.lab.action.edit.EditUserTypeAction">
+			<result name="success">/update_user.jsp</result>
+		</action>
+		
+		<action name="add_user" class="cn.edu.hunnu.lab.action.add.AddUserAction">
+			<result name="success">/update_user.jsp</result>
+		</action>
+		
+		<action name="delete_user" class="cn.edu.hunnu.lab.action.delete.DeleteUserAction">
+			<result name="success">/update_user.jsp</result>
+		</action>
+		
+		<action name="read_membertype" class="cn.edu.hunnu.lab.action.read.ReadMemberTypeAction">
+			<result name="success">/team.jsp</result>
+		</action>
+		<action name="read_membertype_userDetail" class="cn.edu.hunnu.lab.action.read.ReadMemberTypeAction">
+			<result name="success">/user_detail.jsp</result>
+		</action>
+		<action name="read_membertype_teamIndex" class="cn.edu.hunnu.lab.action.read.ReadMemberTypeAction">
+			<result name="success">/teamIndex.jsp</result>
+		</action>
+		<action name="read_membertype_memberDetail" class="cn.edu.hunnu.lab.action.read.ReadMemberTypeAction">
+			<result name="success">/memberDetail.jsp</result>
+		</action>
+		<action name="add_membertype" class="cn.edu.hunnu.lab.action.add.AddMemberTypeAction">
+			<result name="success">/team.jsp</result>
+		</action>
+		<action name="delete_membertype" class="cn.edu.hunnu.lab.action.delete.DeleteTypeAction">
+			<result name="success">/team.jsp</result>
+		</action>
+		<action name="edit_membertype" class="cn.edu.hunnu.lab.action.edit.EditTypeAction">
+			<result name="success">/team.jsp</result>
+		</action>
+		
+		<action name="add_achievement_type" class="cn.edu.hunnu.lab.action.add.AddAchieveTypeAction">
+			<result name="success">/achieveConfig.jsp</result>
+		</action>
+		<action name="delete_achievement_type" class="cn.edu.hunnu.lab.action.delete.DeleteTypeAction">
+			<result name="success">/achieveConfig.jsp</result>
+		</action>
+		<action name="edit_achievement_type" class="cn.edu.hunnu.lab.action.edit.EditTypeAction">
+			<result name="success">/achieveConfig.jsp</result>
+		</action>
+		
+		<action name="read_achievement_type_achieve" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/achievements.jsp</result>
+		</action>
+		<action name="read_achievement_type_libinfo" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/libinfo.jsp</result>
+		</action> 
+		<action name="read_achievement_type_userinfo" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/userinfo.jsp</result>
+		</action>
+		<action name="read_achievement_type_achieveConfig" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/achieveConfig.jsp</result>
+		</action>
+		<action name="read_achievement_type_labRule" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/labRule.jsp</result>
+		</action>
+		<action name="read_achievement_type_labResearchArea" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/labResearchArea.jsp</result>
+		</action>
+		<action name="read_achievement_type_news" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/news.jsp</result>
+		</action>
+		<action name="read_achievement_type_notice" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/notice.jsp</result>
+		</action>
+		<action name="read_achievement_type_team" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success" type="chain">read_membertype</result>
+		</action>
+		<action name="read_achievement_type_researchIndex" class="cn.edu.hunnu.lab.action.read.ReadAchievementTypeAction">
+			<result name="success">/researchIndex.jsp</result>
+		</action>
+		
+		<action name="show_method" class="cn.edu.hunnu.lab.action.ChooseMethodAction">
+			<result name="success">/achieveConfig.jsp</result>
+		</action>
+		
+		<action name="file_upload" class="cn.edu.hunnu.lab.action.UploadAction">
+			<result name="success">/success.jsp</result>
+			<param name="maximumSize">52428800</param>
+		</action>
+		
+		<action name="read_file_upload" class="cn.edu.hunnu.lab.action.read.ShowUploadAction">
+			<result name="success">/upload.jsp</result>
+		</action>
+
+	</package></struts>    

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+	function get(){
+<!--	createXMLHttpRequest();-->
+<!--	xmlHttp.open("open","test2.jsp",true);-->
+<!--	xmlHttp.onreadystatechange=callback;-->
+<!--	xmlHttp.send(null);-->
+<!--	alert('11111111');-->
+<!--	}-->
+<!--	function callback(){-->
+<!--	alert('22222222');-->
+<!--	if(xmlHttp.readyState==4){-->
+<!--	show();-->
+    $.ajax({
+   			url:"xxx.action",
+       		data:{name:"luo", name1:"oudizuo"},
+       		success:function(data){alert(data);},
+       		error:function(){alert("error");}
+        	}
+    		});
+	}
+	function test(){
+	   document.getElementById('display').innerHTML='<table border=1><tr><td>helloworld</td></tr></table>';
+	}
+	function show(){
+	var xmlDoc = xmlHttp.responseXML;
+	var program = xmlDoc.getElementsByTagName("program");
+	var divNode = document.getElementById("display");
+	divNode.innerHTML="";
+	for(var i = 0;i<program.length;i++){
+		var user = program[i].getElementByTagName("user")[0].firstChild.data;
+		var name = program[i].getElementByTagName("name")[0].firstChild.data;
+		var pNode = document.createElement("p");
+		pNode.appendChild(document.createTextNode(user+" "+name));
+		divNode.appendChild(pNode);
+	}
+	}
+</script>
+</head>
+
+<body>
+<button id='b' onClick="get();">解析XML</button>
+<div id = "display" align="center">asdfasdfasdf</div>
+</body>
+</html>

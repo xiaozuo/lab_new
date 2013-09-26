@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+#memberNav{
+	padding:5px; 
+	margin:0px 0px 0px 0px; 
+	margin-bottom:80px;
+}
+#memberNav li{
+	cursor:pointer;
+}
+#memberNav li:hover{
+	color:#30F;}
+#teamIndexImg{
+	margin-left:5px;
+	margin-top:5px;
+	border-bottom:1px solid #000;
+}
+#detail{
+	padding-left:20px;
+	padding-top:10px;
+}
+#personalResume{
+	width:360px;
+	height:20;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#members_page{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666;
+	position:absolute;
+	left:565px;
+	top:735px;
+}
+#members_page span{
+	text_align:center;
+}
+#personDetail{
+	padding-top:10px;
+	width:500px;
+}
+#memberDetailResume{
+	
+	height:85px;
+	overflow:auto;
+}
+#memberDetailExp{
+	width:545px;
+	height:130px;
+	overflow:auto;
+}

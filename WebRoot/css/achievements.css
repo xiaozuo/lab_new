@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+.limit_text_length{
+	width:110px;
+	height:18px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+#admin_research_table{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:780px;
+	padding-left:10px;
+	text-indent:20px;
+}
+#admin_research_table a{
+	color:#33F;
+	text-decoration:none;
+}
+#admin_research_table a:hover{
+	color:#909;
+	text-decoration:underline;
+}
+#edit_research{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	position:absolute;
+	left:420px;
+	top:585px;
+	line-height:20px;
+}
+#edit_research input{
+	width:120px;
+}
+#add_research{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	position:absolute;
+	left:420px;
+	top:785px;
+	line-height:20px;
+}
+#add_research input{
+	width:120px;
+}
+
+#admin_method{
+	float:left;
+	width:820px;
+	height:950px;
+	background-color:#FFF;
+	padding-left:10px;
+	padding-top:12px;
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:40px;
+}
+#admin_method h4{
+	display:inline;
+}
+.admin_method_title{
+	font-size:18px;
+	color:#33F;
+	display:block;
+}
+#admin_method div{
+	padding-left:40px;
+}
+.radio{
+	padding-left:60px;
+}
+#location{
+	position:absolute;
+	left:650px;
+	top:245px;
+}
+#configDiv{
+	width:600px;
+}
+#deleteType{
+	font-size:20px;
+	color:#666;
+	width:0px;
+	height:15px;
+	display:inline;
+	cursor:pointer;
+}
+#deleteType:hover{
+	color:#00F;}
+#typeName{
+	cursor:pointer;
+}
+#typeName:hover{
+	color:#00F;}
+#memberTypeName{
+	cursor:pointer;
+}
+#memberTypeName:hover{
+	color:#00F;}

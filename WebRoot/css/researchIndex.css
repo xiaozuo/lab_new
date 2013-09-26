@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+#researchIndexImg{
+	margin-top:5px;
+	margin-left:5px;
+	border-bottom:1px solid #000;
+}
+#research_table{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:560px;
+}
+#research_table_title{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:700;
+}
+#research_name{
+	color:#33F;
+	text-decoration:none;
+	cursor:pointer;
+}
+#research_name:hover{
+	color:#909;
+	text-decoration:underline;
+}
+.limit_text_length{
+	width:450px;
+	height:25px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
+#research_page{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#666;
+	position:absolute;
+	left:585px;
+	top:735px;
+}
+#research_page span{
+	text_align:center;
+}
+
+#current_page_index{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+#last_page_index{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333;
+}
+#return{
+	padding-left:20px;
+	cursor:pointer;
+	color:#33F;
+}
+#return:hover{
+	color:#909;
+	text-decoration:underline;
+}

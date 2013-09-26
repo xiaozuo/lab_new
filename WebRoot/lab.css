@@ -1,0 +1,391 @@
+body{
+	background-image:url(images/background.jpg);
+	font-family:Arial, Helvetica, sans-serif;;
+}
+body a{
+	color:#000;
+	text-decoration:none;
+}
+body a:hover{
+	color:#00F;}
+#main{
+	margin:0 auto;
+	background-color:#FFF;
+	width:820px;
+	height:785px;
+	border:1px solid #000;
+	border-radius:10px;
+	}
+#navigation{
+	margin:0 auto;
+	width:780px;
+	height:25px;
+	line-height:25px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	text-align:center;
+	margin-top:10px;
+	border-top:5px solid;
+	border-top-color:#606;
+	background:url(images/navigation.jpg) repeat;}
+#navigation a{
+	color:#000;
+	text-decoration:none;}
+#navigation a:hover{
+	color:red;}
+.left{
+	background-image:url(images/form.jpg);
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	width:200px;
+	height:220px;
+	line-height:40px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;}
+.left_title{
+	font-family:"幼圆";
+	font-size:20px;
+	color:#2683BD;
+	font-weight: bold;
+	padding-left:12px;}
+#form_style{
+	width:150px;
+	margin:0 auto;
+	padding-top:15px;
+	}
+.text_style{
+	width:80px;}
+.middle{
+	float:left;
+	width:370px;
+	height:220px;
+	margin-left:10px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:13px;
+	line-height:25px;
+	margin-top:5px;}
+.title{
+	font-size:22px;
+	height:38px;
+	font-family:"华文新魏";
+	color:#F0F;
+	border-bottom:3px solid;
+	border-bottom-color:#606;}
+.content{
+	padding-top:5px;
+	height:130px;
+	overflow:hidden;}
+#research_content{
+	padding-top:5px;
+	width:370px;
+	height:130px;
+	overflow:hidden;}
+.n_content{
+	padding-top:5px;
+	height:170px;
+	overflow:hidden;}
+#achievementDetail{
+	width:370px;
+	overflow:hidden;
+	height:25px;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
+.noticeNewsDetail{
+	width:200px;
+	overflow:hidden;
+	height:25px;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
+#introduce{
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#006;
+	float:right;
+	float:bottom;
+	padding-right:10px;
+	padding-top:10px;}
+.middle a{
+	color:#006;
+	text-decoration:none;
+}
+.middle a:hover{
+	color:#64B4DF;
+}
+.news_notice{
+	float:left;
+	width:190px;
+	height:220px;
+	margin-left:10px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:13px;
+	line-height:25px;
+	margin-top:5px;
+	overflow:hidden;}
+#more{
+	color:#000;
+	font-size:12px;}
+.connect{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	line-height:25px;
+	height:250px;
+	padding-left:6px;
+	padding-right:3px;
+	padding-top:15px;}
+#chain{
+	width:780px;
+	float:left;
+	margin-left:12px;
+	margin-top:11px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	color:#303;}
+#chain p{
+	font-size:18px;}
+#chain a{
+	color:#303;
+	text-decoration:none;}
+#chain a:hover{
+	color:#00C;}
+#foot{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	text-align:center;
+	width:780px;
+	float:left;
+	margin-left:10px;
+	margin-top:20px;
+	padding-top:5px;
+	border-top:1px solid #606;}
+.navPosition{
+	color:#309;
+}
+#research li{
+	cursor:pointer;
+}
+#research li:hover{
+	color:#00C;
+}
+ 
+.admin{
+	margin:0 auto;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+}
+#admin a{
+	font-size:12px;
+}
+.admin_left{
+	float:left;
+	margin-left:10px;
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:14px;
+	line-height:35px;
+	padding-top:15px;
+	width:220px;
+	height:950px;
+	border-right:1px solid;
+	border-right-color:#606;
+	background-image:url(images/left_back.jpg);
+	background-image:url(images/left_navigator.jpg);
+}
+.admin_left a{font-weight:700;}
+.admin_left ul{
+	padding:5px;
+	margin:0px 0px 0px 0px;
+	margin-bottom:80px;
+	}
+.admin_left li{
+	margin:0px 0px 0px 0px;
+	padding-start:0px;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	color:#000;
+	width:190px;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	background-image:url(images/left_navigator.jpg);
+	border: 2px solid #fff;
+	float:left;
+	list-style: none;}
+.admin_left li a{
+	color:#000;
+	text-decoration:none;}
+.admin_left li a:hover{
+	color:#30F;}
+	
+#labinfo li a{
+	font-weight:normal;
+}
+#research li a{
+	font-weight:normal;
+}
+.menu{
+	margin-left:5px;
+	width:13px;
+	height:13px;
+}
+#submenu_lab{
+	margin-left:5px;
+	width:13px;
+	height:13px;
+}
+#submenu_research{
+	margin-left:5px;
+	width:13px;
+	height:13px;
+}
+#submenu_team{
+	margin-left:5px;
+	width:13px;
+	height:13px;
+}
+
+#admin_user{
+	float:left;
+	margin-left:0px;
+	padding-left:15px;
+	padding-top:8px;
+	margin-top:5px;
+	width:820px;
+	height:955px;
+	background-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:14px;
+}
+
+#userinfo{
+	font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size:12px;
+	width:780px;
+	padding-left:10px;
+	text-indent:50px;
+}
+#tabletitle{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-weight:700;
+	background-color:#ccc;
+}
+#adduser{
+	position:absolute;
+	left:440px;
+	top:620px;
+	height:120px;
+}
+#adduser table{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:12px;
+	height:110px;
+}
+#adduser_button{
+	position:absolute;
+	left:150px;
+	top:165px;
+}
+#user_page{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:10px;
+	color:#666;
+	position:absolute;
+	left:620px;
+	top:578px;
+}
+#user_page span{
+	text_align:center;
+}
+
+
+#userdetail{
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:14px;
+	margin-left:10px;
+	margin-top:10px;
+	line-height:40px;
+	padding-left:230px;
+	padding-top:10px;
+	background-color:#fff;
+	height:770px;
+}
+#user_detail_nav{
+	float:left;
+	padding-left:10px;
+	padding-top:20px;
+	border-right:1px solid;
+	border-right-color:#606;
+	background-image:url(images/left_navigator.jpg);
+	width:200px;
+	height:760px;
+	font-size:14px;
+	line-height:40px;
+}
+#user_detail_submit{
+	position:absolute;
+	left:940px;
+	top:670px;
+}
+
+#admin_lib{
+	float:left;
+	margin-left:0px;
+	padding-left:15px;
+	padding-top:12px;
+	margin-top:5px;
+	line-height:40px;
+	width:820px;
+	height:950px;
+	background-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:14px;
+}
+
+#password{
+	margin:0 auto;
+	background-color:#FFF;
+	width:700px;
+	height:420px;
+	border-color:#FCF;
+	font-family:Arial, Helvetica, sans-serif;;
+	font-size:14px;
+}
+#pass_nav{
+	float:left;
+	padding-left:10px;
+	padding-top:20px;
+	border-right:1px solid;
+	border-right-color:#606;
+	background-image:url(images/left_navigator.jpg);
+	width:200px;
+	height:400px;
+	font-size:18px;
+	line-height:40px;	
+}
+#password table{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding-left:50px;
+	padding-top:70px;
+}
+#pass_submit{
+	position:absolute;
+	left:640px;
+	top:260px;
+}
+
+.button{ 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#333;
+	background:none;
+	border:none; 
+	background-color:#6CC;
+	border-radius:4px;
+	cursor:pointer;
+}
+#labRuleDetail{
+	height:430px;
+	width:540px;
+	overflow:auto;
+}
